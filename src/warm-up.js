@@ -89,18 +89,20 @@ read(isFavorite)
 
 // Create a new variable "books" and assign it to an Array of 5 different
 // book titles, represented by their names as Strings.
+var books = ['Malibu Rising', 'The Silent Patient', 'Queenie', 'The New York Trilogy', 'The Castle']
+
 
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
-
+console.log(books[2])
 
 // Create a new variable "belowTwoHundred" and assign it to an Array of 12
 // different numbers below two hundred.
-
+var belowTwoHundred = [100, 67, 189, 55, 117, 34, 146, 3, 90, 44, 20, 199]
 
 // Write the code to access the 5th element of the array, using bracket notation.
-
+console.log(belowTwoHundred[4])
 
 //------------------------- Objects -------------------------//
 
