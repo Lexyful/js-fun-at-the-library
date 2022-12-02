@@ -41,5 +41,6 @@ module.exports = {
    saveReview,
    calculatePageCount,
    writeBook,
-  // editBook
-}
+   editBook
+  }mk
+
