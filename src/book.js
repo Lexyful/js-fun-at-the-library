@@ -34,6 +34,14 @@ function buildMainCharacter(name, age, pronouns) {
    return book
   }
 
+  function editBook(book) {
+    var total = book.pageCount * .75
+    book.pageCount = total
+    return total
+  }
+
+
+
 
 module.exports = {
   createTitle,
