@@ -16,6 +16,7 @@ function unshelfBook(book, shelf) {
 function listTitles(shelf) {
   var titles = []
   for(var i = 0; i < shelf.length; i++) {
+
      titles.push(shelf[i].title) 
 
   }
@@ -23,9 +24,21 @@ return titles.join(', ')
 
 }
 
+function searchShelf(shelfy, booky2) {
+    for(var i = 0; i < shelfy.length; i ++) {
+      if(shelfy[i].title === booky2) {
+        return true
+    }
+    
+  }
+ return false 
+}
+
+
+
 module.exports = {
    shelfBook,
    unshelfBook,
    listTitles,
-  // searchShelf
-};
+   searchShelf
+};    
