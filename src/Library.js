@@ -10,17 +10,22 @@ function addBook(libraryName, bookName){
 if(bookName.genre === 'fantasy') {
   return libraryName.shelves.fantasy.push(bookName)
 
-   } else if(bookName.genre== 'nonFiction')
+   } else if(bookName.genre === 'nonFiction')
    return libraryName.shelves.nonFiction.push(bookName)
 
   }
 
-function checkoutBook(libraryName, bookName, shelves) {
-  for (var i = 0; i < shelf.length; i++) { 
-    if(shelves[0].bookName) {
-    return libraryName.shelves[i].splice(i, 1)
+function checkoutBook(library, bookName, genre) {
+  for (var i = 0; i < library.shelves[genre].length; i++) { 
+    if(bookName === library.shelves[genre][i].title) {
+     library.shelves[genre].splice(i, 1) 
+   return `You have now checked out ${bookName} from the ${library.name}`
   }
-}
+     
+  }
+  return `Sorry, there are currently no copies of ${bookName} available at the ${library.name}`
+
+
 }
 
 
